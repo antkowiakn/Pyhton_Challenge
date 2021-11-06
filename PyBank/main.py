@@ -63,8 +63,11 @@ print(f"Greatest Increase in Profits: {largest_date} ($ {str(largest_increase)}"
 print(f"Greatest Decrease in Profits: {greatest_date} ($ {str(greatest_decrease)}")
 
 
-#export a text file with the results
-with open('financial_analysis.txt', 'w') as text:
+#create a path for a Txt file
+output_path = os.path.join('Analysis','Financial_Analysis.txt' )
+
+#with the file open write financial analysis
+with open(output_path, 'w') as text:
 
     text.write("Financial Analysis\n")
     text.write("------------------"+ "\n")
